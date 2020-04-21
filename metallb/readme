@@ -1,0 +1,9 @@
+1. Edit metallb-config.yaml and replace FILL-ME-IN with network range to use from existing DHCP newtork (e.g. 192.168.4.240-192.168.4.250)
+
+2. Run the following commands:
+
+kubectl create ns metallb-system
+kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="\$(openssl rand -base64 128)"
+kubectl apply -n metallb-system -f metallb.yaml
+kubectl apply -n metallb-system -f metallb-config.yaml
+

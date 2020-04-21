@@ -1,0 +1,9 @@
+1. Edit defaultstorageclass.yaml and replace FILL-ME-IN with the vSphere Datastore URL found in vSphere UI
+
+2. kubectl apply -f defaultstorageclass.yaml
+
+3. kubectl apply -f pvc.yaml
+
+4. kubectl get pvc -A
+
+5. kubectl delete pvc <pvcId>
