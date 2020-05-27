@@ -84,7 +84,7 @@ spec:
     spec:
       containers:
       - name: yelb-ui
-        image: registry.rainpole.io/library/yelb-ui:0.3
+        image: registry.rainpole.io/library/yelb-ui:0.6
         ports:
         - containerPort: 80
 ---
@@ -128,7 +128,7 @@ spec:
     spec:
       containers:
       - name: yelb-db
-        image: registry.rainpole.io/library/yelb-db:0.3
+        image: registry.rainpole.io/library/yelb-db:0.5
         ports:
         - containerPort: 5432
 ---
@@ -150,6 +150,6 @@ spec:
     spec:
       containers:
       - name: yelb-appserver
-        image: registry.rainpole.io/library/yelb-appserver:0.3
+        image: registry.rainpole.io/library/yelb-appserver:0.5
         ports:
         - containerPort: 4567
