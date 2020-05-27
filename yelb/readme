@@ -1,3 +1,24 @@
 yelb.yaml - NodePort Example
+
+Step 1 - Create yelb NS
+kubectl create ns yelb
+
+Step 2 - Deploy Yelb App
+kubectl apply -f yelb.yaml
+
+Step 3 - Delete Yelb App
+kubectl delete -f yelb.yaml
+
+
 yelb-lb.yaml - Load Balancer Example
 
+Step 0 - Ensure you've got Load Balancer service enabled. If you do not have one, take a look at metallb
+
+Step 1 - Create yelb NS
+kubectl create ns yelb
+
+Step 2 - Deploy Yelb App
+kubectl apply -f yelb-lb.yaml
+
+Step 3 - Delete Yelb App
+kubectl delete -f yelb-b.yaml
