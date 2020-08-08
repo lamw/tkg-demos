@@ -61,7 +61,7 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 80
-    nodePort: 30001
+    nodePort: 31001
   selector:
     app: yelb-ui
     tier: frontend

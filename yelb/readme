@@ -1,4 +1,4 @@
-yelb.yaml - NodePort Example
+NodePort Example
 
 Step 1 - Create yelb NS
 kubectl create ns yelb
@@ -10,7 +10,7 @@ Step 3 - Delete Yelb App
 kubectl delete -f yelb.yaml
 
 
-yelb-lb.yaml - Load Balancer Example
+Load Balancer Example
 
 Step 0 - Ensure you've got Load Balancer service enabled. If you do not have one, take a look at metallb
 
